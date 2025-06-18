@@ -1,0 +1,128 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #cbcbcb;
+}
+
+.card {
+  background-color: var(--card-background-color);
+  border-radius: 0.8rem;
+  width: 35rem;
+  height: 60rem;
+  padding: 2rem;
+}
+
+.card .image {
+  margin-bottom: 2rem;
+}
+
+.card .informations-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.card .informations-wrapper .title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: var(--primary-text-color);
+}
+
+.card .informations-wrapper .price-wrapper {
+  font-weight: bold;
+  margin-bottom: 1.4rem;
+}
+
+.card .informations-wrapper .price-wrapper .old-price {
+  font-size: 1.2rem;
+  color: var(--secondary-text-color);
+}
+
+.card .informations-wrapper .price-wrapper .actual-price {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: var(--primary-text-color);
+}
+
+.card .informations-wrapper .color-select {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.card .informations-wrapper .color-select p {
+  font-size: 1.2rem;
+  color: var(--secondary-text-color);
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+}
+
+.card .informations-wrapper .color-select .color-options {
+  display: flex;
+  gap: 1rem;
+}
+
+.circle {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+}
+
+.circle:hover {
+  transform: scale(1.15);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.color-one {
+  background-color: #9c9c9c;
+}
+
+.color-two {
+  background-color: #d33030;
+}
+
+.color-three {
+  background-color: #f8ce38;
+}
+
+.card .informations-wrapper .add-to-cart-btn {
+  background-color: var(--button-background-color);
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 1.2rem 0;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin-bottom: 1.4rem;
+  transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card .informations-wrapper .add-to-cart-btn:active {
+  transform: scale(0.96);
+}
+
+.card .informations-wrapper .add-to-cart-btn:hover {
+  background-color: #22a017;
+}
+
+.card .informations-wrapper .more-info-btn {
+    font-size: 1.6rem;
+    text-align: center;
+    color: #9c9c9c;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+}
+
+.card .informations-wrapper .more-info-btn:hover {
+    text-decoration: underline;
+}
