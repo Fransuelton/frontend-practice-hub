@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fefefa;
+}
+
+.alert-wrapper {
+  width: 50rem;
+  height: 10rem;
+  background-color: #edfdee;
+  border-radius: 1rem;
+  padding: 1.2rem;
+  border: 0.2rem solid #286848;
+  position: relative;
+}
+
+.alert-wrapper .title {
+  font-size: 3.2rem;
+  color: #1f6547;
+  margin-bottom: 1rem;
+}
+
+.alert-wrapper .message {
+  color: #1f6547;
+  font-size: 1.6rem;
+}
+
+.alert-wrapper .close-btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #1f6547;
+  position: absolute;
+  left: 47rem;
+  top: 1rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+  font-weight: 600;
+}
